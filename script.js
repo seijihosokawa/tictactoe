@@ -19,11 +19,13 @@ const cells = document.querySelectorAll('.cell');
 function easyMode(){
     difficulty = "easy";
     console.log(difficulty);
+    startGame()
 }
 
 function impossibleMode(){
     difficulty = "impossible";
     console.log(difficulty);
+    startGame()
 }
 
 startGame();
@@ -75,7 +77,7 @@ function gameOver(gameWon) {
     document.querySelector('.table-hover').style.setProperty('background-color', '')
     for (let index of winCombinations[gameWon.index]) {
         document.getElementById(index).style.backgroundColor =
-        gameWon.player == humanPlayer ? "dodgerblue" : "red";
+        gameWon.player == humanPlayer ? "lightgreen" : "red";
     }
     for (var i = 0; i < cells.length; i++) {
         cells[i].removeEventListener('click', turnClick, false);
@@ -112,7 +114,7 @@ function randomSpot(board, player){
 function checkTie(){
     if(emptySquares().length == 0){
         for(var i = 0; i < cells.length;i++){
-            cells[i].style.backgroundColor = "lightgreen";
+            cells[i].style.backgroundColor = "dodgerblue";
             cells[i].removeEventListener('click', turnClick, false);
         }
         declareWinner("Tie Game!")
