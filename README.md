@@ -5,6 +5,8 @@ This game has an easy mode and an impossible mode (using the Minimax algorithm).
 
 Uses Bootstrap HTML, CSS, and Javascript. 
 
+[Click here to play Tic-Tac-Toe.](https://seijihosokawa.github.io/tictactoe/)
+
 ![Screenshot](tictactoe.png)
 
 References:
