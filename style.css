@@ -43,3 +43,12 @@ table tr td:last-child {
     color: white;
     font-size: 2em;
 }
+
+h1 {
+    font-size:xx-large;
+    text-align: center;
+}
+
+@media (min-width: 768px) {  
+  h1 {font-size:90px} 
+}
